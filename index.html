@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Youtube Mobile UI</title>
     <script
       src="https://kit.fontawesome.com/f1edfc6fcb.js"
@@ -38,35 +42,38 @@
           <li>#CloneCoding</li>
           <li>#TaeKKi</li>
         </ul>
-        <div class="titleAndButtons">
+        <div class="titleAndButton">
           <span class="title">
             Clone Coding: Youtube Mobile Website 유투브 모바일 웹사이트 따라
-            만들기 | HTML CSS Javascript 복습과 UI clone
+            만들기 | 프론트엔드 개발 HTML CSS Javascript 복습과 UI clone
+            연습하기 (이제 나도 레이아웃 잡을 수 있다!)
           </span>
           <button class="moreBtn">
             <i class="fas fa-caret-down"></i>
           </button>
         </div>
-        <div class="views">
-          <span class="views">1M views 1 month ago</span>
-        </div>
+        <span class="views">1M views 1 month ago</span>
       </div>
       <!-- Actions -->
       <ul class="actions">
         <li>
-          <button><i class="fas fa-thumbs-up"></i></button>
+          <button>
+            <i class="active fas fa-thumbs-up"></i><span>1K</span>
+          </button>
         </li>
         <li>
-          <button><i class="fas fa-thumbs-down"></i></button>
+          <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
         </li>
         <li>
-          <button><i class="fas fa-share"></i></button>
+          <button><i class="fas fa-share"></i><span>Share</span></button>
         </li>
         <li>
-          <button><i class="fas fa-plus"></i></button>
+          <button><i class="fas fa-plus"></i><span>Save</span></button>
         </li>
         <li>
-          <button><i class="fas fa-font-awesome-flag"></i></button>
+          <button>
+            <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+          </button>
         </li>
       </ul>
       <!-- Channel Description -->
@@ -85,7 +92,8 @@
       <span class="title">Up next</span>
       <ul>
         <li class="item">
-          <img src="image/1.jpg" alt="" />
+          <div class="img"><img src="image/1.jpg" alt="" /></div>
+
           <div class="info">
             <span class="title"
               >아름다운 곳으로 여행가기 1탄! | 야경이 아름답고 멋진 성이 있는
@@ -97,7 +105,7 @@
           <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
         </li>
         <li class="item">
-          <img src="image/2.jpg" alt="" />
+          <div class="img"><img src="image/2.jpg" alt="" /></div>
           <div class="info">
             <span class="title"
               >아름다운 곳으로 여행가기 2탄! | 달이 보이고 열기구가 떠다니는
@@ -109,7 +117,7 @@
           <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
         </li>
         <li class="item">
-          <img src="image/1.jpg" alt="" />
+          <div class="img"><img src="image/3.jpg" alt="" /></div>
           <div class="info">
             <span class="title"
               >아름다운 곳으로 여행가기 3탄! | 붉은 빛이 뒤덮은 깊은
